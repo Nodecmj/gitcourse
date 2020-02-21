@@ -1,0 +1,25 @@
+1、git init 创建本地仓库
+2、git status 查看工作区  暂存区的状态
+3、git add 将工作区的新建或修改添加到暂存区
+4、 git rm --cached good.txt 把从暂存区的文件重新删除回来，
+5、git commit 添加到本地库（这一步之后会进入到）图片1.png的页面  
+5.1、git commit -m "xxxxxx" good.txt 这样可以直接在此命令写注释，不用跳转到第6点，这样更方便
+6、可以做一些注释，按“i”键可以 在开头写上注释 按esc退出  按“:wq”回车即可退出、
+
+/--------------------------------git历史版本查看和回退命令
+git log 可以看历史版本记录 git reflog更清楚 并且显示局部索引值，
+git reset --hard 9e28429 可以回到对应的索引历史版本
+/--------------------------------分支命令
+git branch -v 查看分支
+git branch xxx 后面写xxx就是创建xxx分支
+git checkout xxx 切换到xxx分支
+合并分支：第一步：
+	切换到接受修改的分支（被合并，增加新内容）上
+	git checkout [需要让别的分支来融入的分支]
+ 	第二步：
+	git merge [新添加内容融入的分支]
+
+git如果合并冲突 详情请看git2.jpg
+
+nothing to commit, working tree clean ：没有什么东西要提交暂存区是干净的，工作区没有什么修改或新建
+
