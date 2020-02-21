@@ -21,5 +21,10 @@ git checkout xxx 切换到xxx分支
 
 git如果合并冲突 详情请看git2.jpg
 
+/---------------------------------git推送远程仓库
+git remote -v查看当前有没有命名的仓库地址和变量名
+git remote add xxx http://xxx 创建一个变量名 xxx，并把仓库地址赋给这个变量 之后可以用这个变量代表仓库地址
+然后推送 git push xxx master 选择xxx推送地址 然后选择要推送的分支，回车
+
 nothing to commit, working tree clean ：没有什么东西要提交暂存区是干净的，工作区没有什么修改或新建
 
